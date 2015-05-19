@@ -81,7 +81,7 @@ a.btn-danger:hover {
 }
 
 .navbar {
-    background-color: rgba(0, 188, 212, 0.9);
+    background-color: rgba(123, 178, 171, 0.9);
     border-bottom: none;
     font-size: 32px;
     box-shadow: 0 0 0px #000000;
@@ -200,7 +200,7 @@ section h2 {
 }
 
 section.main {
-    background: rgb(1, 180, 207);
+	background: url('../img/bg.png') repeat-x center top rgb(123, 178, 171);
     color: #FFFFFF;
     font-weight: 100;
 }
@@ -217,19 +217,29 @@ section.main {
 }
 
 .starter-template {
+    position: relative;
     padding: 121px 15px;
     text-align: center;
 }
 
+.clock{
+	background: url("../img/clock.png") no-repeat;
+	width: 258px;
+	height: 600px;
+	margin-top: -120px;
+	position: absolute;
+	right: 0;
+}
+
 .sobre {
+	position: relative;
     font-size: 22px;
     background-color: #FFFFFF;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: -20px auto 50px;
     text-align: center;
     padding: 40px 40px;
-    margin-top: -120px;
     border-radius: 3px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
 }
@@ -407,7 +417,7 @@ section.main {
 
 .patrocinadores {
     color: #FFFFFF;
-    background-color: #00BCD4;
+    background-color: #7bb2ab;
     min-height: 330px;
     padding-bottom: 44px;
 }
