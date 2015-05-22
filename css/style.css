@@ -42,7 +42,6 @@ a:visited {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .lead {
-    margin: 40px;
     font-weight: 100;
 }
 
@@ -62,7 +61,6 @@ a.btn-danger {
     background: #008094;
     color: #00E5FF;
     border: 0;
-    border-radius: 3px;
     font-weight: 400;
 }
 
@@ -201,7 +199,7 @@ section h2 {
 
 section.main {
 	background: url('../img/bg.png') repeat-x center top rgb(123, 178, 171);
-    color: #FFFFFF;
+    color: #626262;
     font-weight: 100;
 }
 
