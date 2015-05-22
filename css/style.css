@@ -204,14 +204,7 @@ section.main {
 }
 
 .coverzao{
-    max-width: 100%;
-}
-
-.igrejinha {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 140px;
+    max-width: 15%;
 }
 
 .starter-template {
@@ -227,6 +220,11 @@ section.main {
 	margin-top: -120px;
 	position: absolute;
 	right: 0;
+    z-index: 0;
+}
+
+@media all and (max-width: 1200px) {
+    .clock{display: none;}
 }
 
 .sobre {
