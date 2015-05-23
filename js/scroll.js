@@ -11,12 +11,6 @@ $(document).ready(function() {
 		}, 500);
 
 
-		console.log($(this).parent().parent());
-
-		$(this).parent().addClass('active');
-
-
-
 		event.preventDefault();
 	});
 });
