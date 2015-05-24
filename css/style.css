@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    background-color: #CFD8DC;
+    background-color: #ccc;
     font-size: 21px;
     position: relative;
 }
@@ -59,14 +59,17 @@ a:visited {
 
 a.btn-danger {
     background: #008094;
-    color: #00E5FF;
+    color: #FFF;
     border: 0;
     font-weight: 400;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-a.btn-danger:hover {
-    background: #00E5FF;
-    color: #008094;
+a.btn-danger:hover, a.btn-danger:focus {
+    background: #00404a;
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 *
@@ -74,6 +77,10 @@ a.btn-danger:hover {
 *
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
+.navbar-brand{
+    padding-left: 0;
+    margin-left: -15px;
+}
 .navbar-brand img {
     width: 250px;
 }
@@ -88,23 +95,34 @@ a.btn-danger:hover {
 .navbar-header {}
 
 .navbar-nav {
-    margin-top: 9px;
+    /*margin-top: 9px;*/
     float: right;
 }
 
 .navbar-collapse {
-    margin-top: 22px;
-    margin-bottom: 25px;
+    /*margin-top: 22px;
+    margin-bottom: 25px;*/
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-nav>li>a {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 100;
+    line-height: 30px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #4b7e78;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    background-color: #00BCD4;
+    background-color: #4b7e78;
     color: #FFFFFF !important;
 }
 
@@ -134,11 +152,26 @@ section h2 {
     height: 230px;
     margin-bottom: 26px;
     position: relative;
+    overflow: hidden;
+}
+
+.card img{
+    -webkit-transition: all 0.2s ease;
+}
+.card:hover img{
+    -webkit-transform: scale(1.1);
+}
+
+.card-logo{
+    float: none;
+    display: inline-block;
+    margin-left: -4px;
 }
 
 .friend-logo:hover {
-    -webkit-transition: all 1s ease;
-    -webkit-filter: grayscale(0);
+    
+    /*-webkit-transition: all 0.4s ease;*/
+    /*-webkit-filter: grayscale(0);*/
 }
 
 .friend-logo {
@@ -148,8 +181,8 @@ section h2 {
     left: 0;
     right: 0;
     margin: auto;
-    -webkit-transition: all 1s ease;
-    -webkit-filter: grayscale(1);
+    
+    /*-webkit-filter: grayscale(1);*/
 }
 
 .loc-bx {
@@ -162,9 +195,10 @@ section h2 {
     margin-bottom: 10px;
 }
 
-#hey-yo {
-    margin-top: 10px;
+.hey-yo {
+    margin: 10px 5px 0 5px;
     text-transform: uppercase;
+    padding: 18px 40px;
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 *
@@ -198,7 +232,7 @@ section h2 {
 }
 
 section.main {
-	background: url('../img/bg.png') repeat-x center top rgb(123, 178, 171);
+	background: url('../img/bg.png') repeat-x fixed center top rgb(123, 178, 171);
     color: #626262;
     font-weight: 100;
 }
@@ -209,18 +243,18 @@ section.main {
 
 .starter-template {
     position: relative;
-    padding: 121px 15px;
+    padding: 160px 15px 62px;
     text-align: center;
 }
 
 .clock{
-	background: url("../img/clock.png") no-repeat;
-	width: 258px;
-	height: 600px;
-	margin-top: -120px;
-	position: absolute;
-	right: 0;
+    background: url("../img/clock.png") no-repeat;
+    width: 258px;
+    height: 600px;
+    position: absolute;
+    right: 0;
     z-index: 0;
+    top: 0;
 }
 
 @media all and (max-width: 1200px) {
@@ -259,9 +293,9 @@ section.main {
 }
 
 .presentation-desc {
-    display: inline-block;
+    /*display: inline-block;
     margin-left: 15px;
-    max-width: 80%;
+    max-width: 80%;*/
 }
 
 .col-sm-3 .presentation-desc h3,
@@ -337,8 +371,7 @@ section.main {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .localizacao {
-    border-top: 4px solid #455A64;
-    background-color: #455A64;
+    /*background-color: #455A64;*/
     padding: 0 0 60px;
     overflow: hidden;
     min-height: 350px;
@@ -359,8 +392,8 @@ section.main {
 }
 
 .hackathon {
-    color: #FFFFFF;
-    background-color: #2E2D2E;
+    color: #2E2D2E;
+    background-color: #FFF;
     min-height: 330px;
     padding: 20px 44px 60px;
     text-align: center;
@@ -372,9 +405,9 @@ section.main {
 }
 
 .btn-codecup {
-    background: #FF9833 !important;
+    /*background: #FF9833 !important;
     color: #2E2C2D !important;
-    text-transform: uppercase !important;
+    text-transform: uppercase !important;*/
     margin-top: 40px !important;
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -384,11 +417,12 @@ section.main {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .organizacao {
-    color: #FFFFFF;
-    background-color: #455A64;
+    color: #2E2D2E;
+    /*background-color: #7bb2ab;*/
     min-height: 330px;
     padding-bottom: 44px;
 }
+
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 *
 * PARCEIROS SECTION
@@ -396,8 +430,8 @@ section.main {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .parceiros {
-    color: #333;
-    background-color: #F5F5F5;
+    color: #2E2D2E;
+    /*background-color: #7bb2ab;*/
     min-height: 330px;
     padding-bottom: 44px;
 }
@@ -408,8 +442,8 @@ section.main {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 .patrocinadores {
-    color: #FFFFFF;
-    background-color: #7bb2ab;
+    color: #2E2D2E;
+    /*background-color: #7bb2ab;*/
     min-height: 330px;
     padding-bottom: 44px;
 }
@@ -452,7 +486,7 @@ footer h1 {
 @media (min-width: 768px) {
     .navbar-brand img {
         width: 200px;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
     }
     .friends-logo {
         margin-left: auto !important;
@@ -462,8 +496,17 @@ footer h1 {
 /* Medium devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
+    .navbar-brand{
+        padding: 8px 0 7px 0;
+        height: auto;
+    }
     .navbar-brand img {
         width: 260px;
+    }
+
+    .navbar-inverse .navbar-nav>li>a{
+        line-height: 50px;
     }
 }
 
@@ -486,21 +529,21 @@ footer h1 {
 }
 
 .img-grayscale:hover {
-    -webkit-transition: all 1s ease;
+    -webkit-transition: all 0.4s ease;
     -webkit-filter: grayscale(0);
 }
 
 .img-grayscale {
-    -webkit-transition: all 1s ease;
+    -webkit-transition: all 0.4s ease;
     -webkit-filter: grayscale(1);
 }
 
 .img-grayscale-inverse:hover {
-    -webkit-transition: all 1s ease;
+    -webkit-transition: all 0.4s ease;
     -webkit-filter: grayscale(1);
 }
 
 .img-grayscale-inverse {
-    -webkit-transition: all 1s ease;
+    -webkit-transition: all 0.4s ease;
     -webkit-filter: grayscale(0);
 }
